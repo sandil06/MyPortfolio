@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let typingSpeed = 80;
 
     function typeWriter() {
+        if (!typingElement) return;
         const currentPhrase = phrases[phraseIndex];
 
         if (isDeleting) {
