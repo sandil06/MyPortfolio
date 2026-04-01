@@ -432,7 +432,7 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: calc(var(--nav-height) + 10px);
+    padding-top: calc(var(--nav-height) + 30px);
     position: relative;
     overflow: hidden;
 }

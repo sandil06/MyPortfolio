@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('typingText');
     const phrases = [
         'IT Undergraduate',
-        'UI/UX Designer',
         'Full-Stack Developer',
-        'MERN Stack Enthusiast',
-        'Creative Problem Solver'
+        'Creative Problem Solver',
+        'UI/UX Designer',
+        'Web Developer'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
