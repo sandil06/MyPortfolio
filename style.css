@@ -278,6 +278,8 @@ ul {
     right: 0;
     height: var(--nav-height);
     z-index: 1000;
+    background: rgba(10, 10, 15, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: background var(--transition-base), box-shadow var(--transition-base);
 }
 
@@ -369,6 +371,30 @@ ul {
 .nav-link.active {
     background: var(--primary-subtle);
     color: var(--primary-light);
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.certificate-card {
+    padding: 30px;
+}
+
+.certificate-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: rgba(108, 99, 255, 0.15);
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 /* Mobile Toggle */
