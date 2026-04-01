@@ -294,7 +294,7 @@ ul {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 14px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -315,8 +315,10 @@ ul {
 
 .nav-links {
     display: flex;
+    flex: 1;
+    justify-content: center;
     gap: 8px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .nav-link {
@@ -337,8 +339,8 @@ ul {
 }
 
 .nav-action {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 12px 26px;
+    font-size: 0.95rem;
 }
 
 .home-badge {
