@@ -17,18 +17,21 @@
     <!-- ===== NAVBAR ===== -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">SR<span class="accent">.</span></a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <a href="#home" class="nav-logo">SR Jayasooriya<span class="accent"></span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificate" class="nav-link">Certificate</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-primary nav-action">Let's Talk</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -39,9 +42,13 @@
         <div class="home-bg-glow-2"></div>
         <div class="container home-grid">
             <div class="home-content">
+                <div class="home-badge animate-on-scroll">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
                 <p class="greeting animate-on-scroll">Hello, I'm</p>
                 <h1 class="home-name animate-on-scroll">
-                    S R <span class="accent">Jayasooriya</span>
+                    Sandil <span class="accent">Jayasooriya</span>
                 </h1>
                 <div class="typing-wrapper animate-on-scroll">
                     <span class="typing-text" id="typingText"></span>
@@ -58,15 +65,16 @@
                     <a href="#contact" class="btn btn-outline">
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
-                    <a href="assets/cv.pdf" download class="btn btn-outline btn-cv">
-                        <i class="fas fa-download"></i> Download CV
+                    <a href="assets/Sandil-Jayasooriya-CV.pdf" download class="btn btn-outline btn-cv">
+                        <i class="fas fa-download"></i> CV
                     </a>
                 </div>
                 <div class="home-socials animate-on-scroll">
-                    <a href="https://github.com/SRJayasooriya" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <span class="home-find-label">FIND ME</span>
+                    <a href="https://github.com/sandil06" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/srjayasooriya" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/sandil-jayasooriya-442993334/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -307,6 +315,24 @@
                     <i class="fab fa-github"></i> View All Repositories
                 </a>
                 <p class="text-muted">4 GitHub repositories available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATE SECTION ===== -->
+    <section id="certificate" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="section-subtitle">Earned Achievements</p>
+                <h2 class="section-title">Certificate <span class="accent">Highlights</span></h2>
+            </div>
+            <div class="certificate-grid animate-on-scroll">
+                <div class="certificate-card glass-card">
+                    <i class="fas fa-certificate certificate-icon"></i>
+                    <h3>Web Development Certificate</h3>
+                    <p>Completed focused training in modern HTML, CSS, JavaScript, and responsive web design principles.</p>
+                    <p class="text-muted">Issued by an industry-recognized training program.</p>
+                </div>
             </div>
         </div>
     </section>
