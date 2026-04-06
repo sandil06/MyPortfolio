@@ -1387,6 +1387,15 @@ ul {
         grid-template-columns: 1fr;
     }
 
+    /* Skills */
+    .skills-grid-5 {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid-5 > :last-child {
+        grid-column: auto;
+    }
+
     /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
