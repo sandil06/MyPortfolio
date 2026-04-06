@@ -5,30 +5,33 @@
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
-    --primary: #6C63FF;
-    --primary-light: #8B83FF;
-    --primary-dark: #4E47CC;
-    --primary-glow: rgba(108, 99, 255, 0.4);
-    --primary-subtle: rgba(108, 99, 255, 0.1);
+    --primary: #a855f7;
+    --primary-light: #c084fc;
+    --primary-dark: #7c3aed;
+    --primary-glow: rgba(168, 85, 247, 0.4);
+    --primary-subtle: rgba(168, 85, 247, 0.1);
 
-    --neon-purple: #A78BFA;
-    --neon-glow: 0 0 15px rgba(108, 99, 255, 0.5), 0 0 45px rgba(108, 99, 255, 0.2);
-    --neon-glow-strong: 0 0 20px rgba(108, 99, 255, 0.6), 0 0 60px rgba(108, 99, 255, 0.3);
+    --neon-cyan: #22d3ee;
+    --neon-magenta: #e879f9;
+    --neon-purple: #c084fc;
+    --neon-glow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 45px rgba(168, 85, 247, 0.2);
+    --neon-glow-strong: 0 0 20px rgba(168, 85, 247, 0.6), 0 0 60px rgba(168, 85, 247, 0.3);
 
-    --bg-primary: #0A0A0F;
-    --bg-secondary: #111118;
-    --bg-card: rgba(20, 20, 30, 0.6);
-    --bg-glass: rgba(25, 25, 40, 0.5);
+    --bg-primary: #0a0a1a;
+    --bg-secondary: #0d0d20;
+    --bg-card: rgba(15, 15, 35, 0.6);
+    --bg-glass: rgba(18, 18, 40, 0.55);
 
     --text-primary: #F0F0F5;
     --text-secondary: #A0A0B5;
     --text-muted: #6B6B80;
 
-    --border-color: rgba(108, 99, 255, 0.15);
-    --border-glow: rgba(108, 99, 255, 0.3);
+    --border-color: rgba(168, 85, 247, 0.15);
+    --border-glow: rgba(168, 85, 247, 0.3);
 
-    --gradient-primary: linear-gradient(135deg, #6C63FF, #A78BFA);
-    --gradient-bg: linear-gradient(180deg, #0A0A0F 0%, #111118 50%, #0A0A0F 100%);
+    --gradient-primary: linear-gradient(135deg, #a855f7, #22d3ee);
+    --gradient-accent: linear-gradient(135deg, #e879f9, #a855f7, #22d3ee);
+    --gradient-bg: linear-gradient(180deg, #0a0a1a 0%, #0d0d20 50%, #0a0a1a 100%);
 
     --radius-sm: 8px;
     --radius-md: 14px;
@@ -39,7 +42,7 @@
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 30px rgba(108, 99, 255, 0.15);
+    --shadow-glow: 0 0 30px rgba(168, 85, 247, 0.15);
 
     --transition-fast: 0.2s ease;
     --transition-base: 0.3s ease;
@@ -754,6 +757,16 @@ ul {
     gap: 28px;
 }
 
+.skills-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.skills-grid-5 > :last-child {
+    grid-column: 1 / 2;
+}
+
 .skills-category {
     padding: 36px 32px;
 }
@@ -804,10 +817,18 @@ ul {
 .skill-fill {
     height: 100%;
     width: 0;
-    background: var(--gradient-primary);
+    background: linear-gradient(90deg, #22d3ee, #a855f7, #e879f9);
     border-radius: 99px;
     transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 10px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+.skill-icon-inline {
+    color: var(--neon-cyan);
+    margin-right: 6px;
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
 }
 
 /* Skill Tags */
@@ -1276,6 +1297,14 @@ ul {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid-5 > :last-child {
+        grid-column: auto;
     }
 }
 
